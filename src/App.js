@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "./components/layout";
+import NoSearch from "./components/no-search";
 import Profile from "./components/profile";
 import Repositories from "./components/repositories";
 import useGithub from './hooks/github-hooks';
@@ -9,14 +10,18 @@ function App() {
 
   return (
     <Layout>
-      {githubState.hasUser ? <>
-        {githubState.loading ? (<p>Loading...</p>) : (
+      {githubState.hasUser ? 
+        (
           <>
-            <Profile/>
-            <Repositories/>
+            {githubState.loading ? (<p>Loading...</p>) : (
+              <>
+                <Profile/>
+                <Repositories/>
+              </>
+            )}
           </>
-        )}
-      </> : <div>Search for a user to see its information</div> }
+        ) : (<NoSearch/>) 
+      }
     </Layout>
   );
 }

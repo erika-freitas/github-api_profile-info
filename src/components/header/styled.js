@@ -18,13 +18,14 @@ export const Wrapper = styled.div`
   }
 
   button {
-    background-color: #ccc;
+    background-color: black;
     border-radius: 4px;
     padding: 8px 16px;
     font-weight: bold;
+    color: white;
 
     &:hover {
-      background-color: #999;
+      background-color: #222;
       cursor: pointer;
 
   }

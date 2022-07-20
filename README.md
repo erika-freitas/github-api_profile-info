@@ -1,6 +1,6 @@
 # Github API - Profile info
 
-This was a guided project from DIO's instructor [Matheus Benites](https://github.com/benits). I've followed his lessons but made a few modifications.
+This is a guided project by DIO's instructor [Matheus Benites](https://github.com/benits). I've followed his lessons but made a few modifications.
 
 ![repo-tab](https://i.imgur.com/UbYo5mH.png)
 ![starred-tab](https://i.imgur.com/WGB0WoA.png)
